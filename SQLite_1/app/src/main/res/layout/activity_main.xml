@@ -1,0 +1,63 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Điền tên (hoặc id nếu xóa sửa): "
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nguyễn Văn A..."
+        android:textSize="25sp"
+        android:textCursorDrawable="@color/colorPrimary"
+        android:background="#fff"
+        android:paddingVertical="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_Add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            />
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            />
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_Repair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repair"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_Student"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

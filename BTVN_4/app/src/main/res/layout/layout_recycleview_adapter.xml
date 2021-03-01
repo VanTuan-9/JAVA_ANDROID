@@ -1,0 +1,58 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingHorizontal="10dp"
+    android:background="@drawable/custom_background_layout_adapter"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/img_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/tv_inforProduct"
+        android:layout_toRightOf="@+id/img_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="abc"
+        android:maxLines="1"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textAllCaps="true"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/tv_priceProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10000"
+        android:textColor="#DD2C00"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/img_product"
+        android:layout_below="@id/tv_inforProduct"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="đ"
+        android:textColor="#DD2C00"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/tv_priceProduct"
+        android:layout_below="@id/tv_inforProduct"
+        />
+    <Button
+        android:id="@+id/btn_addProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_inforProduct"
+        android:text="Mua ngay"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_add_product"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="10dp"
+        />
+</RelativeLayout>

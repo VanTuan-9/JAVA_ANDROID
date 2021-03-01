@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="2dp"
+        android:background="@android:color/white"
+        >
+
+        <ImageView
+            android:id="@+id/img_product_cart"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:padding="2dp"
+            android:src="@drawable/rsz_mi_pham1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name_product_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="monospace"
+                android:maxLines="2"
+                android:text="Bộ mỹ phẩm SACE LADY gồm kem lót và kem nền chống thấm nước12ml"
+                android:textColor="@android:color/holo_blue_dark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:weightSum="10"
+                >
+
+                <LinearLayout
+                    android:layout_weight="7"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_price_product_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif-monospace"
+                        android:text="1000đ"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/rtb_rating_product_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+                        android:layout_marginLeft="5dp"
+                        android:isIndicator="true"
+                        android:rating="5"
+                        />
+                    <TextView
+                        android:id="@+id/tv_rating_product_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif-monospace"
+                        android:text="5"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/custom_background_count_product_cart"
+                    android:layout_marginHorizontal="5dp"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/ibtn_minus_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/minus"
+                        android:background="@null"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_count_product_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif-monospace"
+                        android:text="0"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        />
+                    <ImageButton
+                        android:id="@+id/ibtn_plus_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/plus"
+                        android:background="@null"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#F1F1F1"
+        />
+</LinearLayout>
